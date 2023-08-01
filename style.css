@@ -19,7 +19,7 @@
 
 .card {
     background-color: rgba(8, 11, 69, 0.5);
-    width: 540px;
+    max-width: 540px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,8 @@ strong {
 }
 
 .address-icon {
-    width: 24px;
+    width: 20px;
+    padding-right: 5px;
     filter: invert(100%)
 }
 
@@ -77,4 +78,74 @@ strong {
 
 .rede-social:hover {
     transform: scale(110%);  
+}
+
+@media (max-width: 500px) {
+    .card {
+        max-width: 340px;
+        padding: 0px 20px;
+    }
+
+    .profile-img {
+        width: 100px;
+        transform: translateY(-50px);
+    }
+
+    .info-card {
+        margin-top: -30px;
+    }
+
+    .name {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .address-icon {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .rede-social {
+        width: 40px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .card {
+        max-width: 200px;
+        padding: 0px 20px;
+    }
+
+    .profile-img {
+        width: 80px;
+        transform: translateY(-40px);
+    }
+
+    .info-card {
+        margin-top: -25px;
+    }
+
+    .name {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 0.6rem;
+    }
+
+    .address-icon {
+        width: 10px;
+        margin-right: 2px;
+    }
+
+    .rede-social {
+        width: 25px;
+        margin: 10px;
+    }
 }
